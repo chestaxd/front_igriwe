@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+{% import "blocks/game_list_macro.html.twig" as macro %}
+{% block title %}Category!{% endblock %}
+
+{% block body %}
+    {% block gameList %}
+        {{ macro.create_game_list(games,pagination) }}
+    {% endblock %}
+{% endblock %}

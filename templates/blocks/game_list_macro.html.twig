@@ -1,0 +1,34 @@
+{% macro create_game_list(games,pagination = false) %}
+    <table class="table table-sm">
+        <tr class="table-active">
+            <th>id</th>
+            <th>Название</th>
+            <th>Категория</th>
+            <th>Дата создания</th>
+            <th>Дата обновления</th>
+            <th>Рейтинг</th>
+        </tr>
+        {% for game in games %}
+            <tr {% if loop.index is odd %}class="color"{% endif %}>
+                <td>{{ game.id }}</td>
+                <td>
+                    {% if game.img %}
+                        <img style="width: 40px"
+                             src="{{ asset(getImageUrl(game.img,'image.game.original')) }}"
+                             alt="">
+                    {% endif %}
+                    <a href="{{ path('game_page',{gameId:game.id, category:game.category.subdomain }) }}">{{ game.name }}</a>
+                </td>
+                <td>{{ game.category.name }}</td>
+                <td>{{ game.createdAt | date('Y-m-d H:i:s') }}</td>
+                <td>{{ game.updatedAt | date('Y-m-d H:i:s') }}</td>
+                <td>{{ game.rating }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    {% if pagination %}
+        <div class="navigation">
+            {{ knp_pagination_render(pagination) }}
+        </div>
+    {% endif %}
+{% endmacro %}

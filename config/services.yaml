@@ -5,9 +5,10 @@
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
 
-  api_prefix: "%env(resolve:API_DOMAIN)%"
+  app.root_domain: "%env(resolve:ROOT_DOMAIN)%"
+  app.categories: "%env(resolve:CATEGORIES)%"
   app.images_directory: '%kernel.project_dir%/public/images/'
-  app.ipp: 5
+  app.ipp: 50
 
 
 

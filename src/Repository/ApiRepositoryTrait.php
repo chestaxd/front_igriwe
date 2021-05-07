@@ -21,22 +21,31 @@ trait ApiRepositoryTrait
         return $this->apiCall('/category/%id%', compact('id'));
     }
 
-    public function getGamesByCategory($categoryId, $page = 1, $ipp = 10)
+    public function getGamesByCategory($categorySubdomain, $page = 1, $ipp = 10, $orderBy = 'createdAt')
     {
-        return $this->apiCall('/categories/%categoryId%/games?page=%page%&itemsPerPage=%ipp%&isPublished=true',
-            compact('categoryId', 'page', 'ipp'));
+        return $this->apiCall('/categories/%categorySubdomain%/games?page=%page%&itemsPerPage=%ipp%&isPublished=true&order[%orderBy%]',
+            compact('categorySubdomain', 'page', 'ipp', 'orderBy'));
     }
 
-    public function getGames($page = 1, $ipp = 10)
+    public function getGames($page = 1, $ipp = 10, $orderBy = 'createdAt')
     {
-        return $this->apiCall('/games?page=%page%&itemsPerPage=%ipp%', compact('page', 'ipp'));
+        return $this->apiCall('/games?page=%page%&itemsPerPage=%ipp%&order[%orderBy%]',
+            compact('page', 'ipp', 'orderBy'));
     }
 
+    public function getGame($gameId)
+    {
+        return $this->apiCall('/game/%gameId%', compact('gameId'));
+    }
+
+    public function getRelevantGames($gameId)
+    {
+        return $this->apiCall('/game/%gameId%/relevant', compact('gameId'));
+    }
 
 //    public function getCountryCities(int $countryId, int $page, $ipp = 60)
 //    {
 //        return $this->apiCall('/countries/%countryId%/cities?rating%5Bgt%5D=1&page=%page%&itemsPerPage=%ipp%&locale=%locale%',
 //            compact('countryId', 'page', 'ipp'));
 //    }
-
 }

@@ -1,0 +1,37 @@
+parameters:
+  image.category.original:
+    prefix: ''
+    width: 200
+    height: 200
+    path: '%app.images_directory%category/'
+    url: '/images/category/'
+  image.category.big:
+    prefix: 'bg_'
+    width: 300
+    height: 300
+    path: '%app.images_directory%category/'
+    url: '/images/category/'
+  image.category.small:
+    prefix: 'sm_'
+    width: 100
+    height: 100
+    path: '%app.images_directory%category/'
+    url: '/images/category/'
+  image.game.original:
+    prefix: ''
+    width: 200
+    height: 200
+    path: '%app.images_directory%game/'
+    url: '/images/game/'
+  image.game.big:
+    prefix: 'bg_'
+    width: 300
+    height: 300
+    path: '%app.images_directory%game/'
+    url: '/images/game/'
+  image.game.small:
+    prefix: 'sm_'
+    width: 100
+    height: 100
+    path: '%app.images_directory%game/'
+    url: '/images/game/'

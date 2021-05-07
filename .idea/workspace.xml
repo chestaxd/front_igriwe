@@ -6,11 +6,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76a0dac2-0935-43ab-8c8f-863486c9e347" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Repository/ApiRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/ApiRepositoryTrait.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/AsyncApiRepository.php_" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/b132d13a-c104-421e-a27b-134f0889ca38.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/b132d13a-c104-421e-a27b-134f0889ca38/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/images_config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/dev/web_profiler.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/doctrine_migrations.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/paginator.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/prod/doctrine.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/sensio_framework_extra.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/test/doctrine.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/test/twig.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/test/web_profiler.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/translation.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/routes/annotations.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/routes/dev/web_profiler.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/Controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/MainController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Service/Image.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Service/ImageService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Twig/TwigImageExtension.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/blocks/_game_list.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/blocks/game_list_macro.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/category/category.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/game/game.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/translations/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/front_igriwe.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/front_igriwe.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -18,6 +48,9 @@
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/ApiRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ApiRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/ApiRepositoryTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ApiRepositoryTrait.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/AsyncApiRepository.php_" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/AsyncApiRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,6 +63,13 @@
     <execution>
       <phar pharPath="$PROJECT_DIR$/composer.phar" interpreterId="182e44d0-6eb2-4ebd-8af7-55c1cde8206a" />
     </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Twig" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -111,6 +151,9 @@
       <path value="$PROJECT_DIR$/vendor/imagine/imagine" />
       <path value="$PROJECT_DIR$/vendor/symfony/property-access" />
       <path value="$PROJECT_DIR$/vendor/symfony/property-info" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/phpunit-bridge" />
     </include_path>
   </component>
   <component name="ProjectId" id="1s1vRmX7u4osPevv7pA5ET1SRTF" />
@@ -130,12 +173,13 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Repository" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../admin_igriwe/composer.json" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/../admin_igriwe/composer.json" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -152,7 +196,10 @@
       <option name="presentableId" value="Default" />
       <updated>1620052905098</updated>
       <workItem from="1620052911799" duration="1247000" />
-      <workItem from="1620323100111" duration="13515000" />
+      <workItem from="1620323100111" duration="13667000" />
+      <workItem from="1620337912357" duration="2907000" />
+      <workItem from="1620376707594" duration="12911000" />
+      <workItem from="1620411345380" duration="10867000" />
     </task>
     <task id="LOCAL-00001" summary="front">
       <created>1620324260845</created>
@@ -161,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620324260846</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add api">
+      <created>1620337596631</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1620337596631</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,7 +235,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="front" />
-    <option name="LAST_COMMIT_MESSAGE" value="front" />
+    <MESSAGE value="add api" />
+    <option name="LAST_COMMIT_MESSAGE" value="add api" />
   </component>
   <component name="WindowStateProjectService">
     <state x="453" y="378" key="#Deployment" timestamp="1620325219252">
@@ -204,30 +259,58 @@
       <screen x="63" y="0" width="2497" height="1440" />
     </state>
     <state x="451" y="378" key="#com.intellij.execution.impl.EditConfigurationsDialog/63.0.2497.1440@63.0.2497.1440" timestamp="1620325729508" />
-    <state x="484" y="307" key="CommitChangelistDialog2" timestamp="1620324260221">
+    <state x="448" y="67" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1620419427958">
       <screen x="63" y="0" width="2497" height="1440" />
     </state>
-    <state x="484" y="307" key="CommitChangelistDialog2/63.0.2497.1440@63.0.2497.1440" timestamp="1620324260221" />
+    <state x="448" y="67" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/63.0.2497.1440@63.0.2497.1440" timestamp="1620419427958" />
+    <state x="589" y="475" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1620417808095">
+      <screen x="63" y="0" width="2497" height="1440" />
+    </state>
+    <state x="589" y="475" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/63.0.2497.1440@63.0.2497.1440" timestamp="1620417808095" />
+    <state x="484" y="307" key="CommitChangelistDialog2" timestamp="1620337595863">
+      <screen x="63" y="0" width="2497" height="1440" />
+    </state>
+    <state x="484" y="307" key="CommitChangelistDialog2/63.0.2497.1440@63.0.2497.1440" timestamp="1620337595863" />
+    <state x="163" y="100" width="1392" height="1240" key="DiffContextDialog" timestamp="1620387820001">
+      <screen x="63" y="0" width="2497" height="1440" />
+    </state>
+    <state x="163" y="100" width="1392" height="1240" key="DiffContextDialog/63.0.2497.1440@63.0.2497.1440" timestamp="1620387820001" />
+    <state x="639" y="475" key="FileChooserDialogImpl" timestamp="1620387749487">
+      <screen x="63" y="0" width="2497" height="1440" />
+    </state>
+    <state x="639" y="475" key="FileChooserDialogImpl/63.0.2497.1440@63.0.2497.1440" timestamp="1620387749487" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1620326749596">
       <screen x="63" y="0" width="2497" height="1440" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/63.0.2497.1440@63.0.2497.1440" timestamp="1620326749596" />
-    <state x="681" y="314" key="NewPhpClassDialog" timestamp="1620331146567">
+    <state x="681" y="314" key="NewPhpClassDialog" timestamp="1620390283861">
       <screen x="63" y="0" width="2497" height="1440" />
     </state>
-    <state x="681" y="314" key="NewPhpClassDialog/63.0.2497.1440@63.0.2497.1440" timestamp="1620331146567" />
+    <state x="681" y="314" key="NewPhpClassDialog/63.0.2497.1440@63.0.2497.1440" timestamp="1620390283861" />
     <state x="362" y="365" key="SettingsEditor" timestamp="1620325209644">
       <screen x="63" y="0" width="2497" height="1440" />
     </state>
     <state x="362" y="365" key="SettingsEditor/63.0.2497.1440@63.0.2497.1440" timestamp="1620325209644" />
-    <state x="451" y="453" key="Vcs.Push.Dialog.v2" timestamp="1620324262480">
+    <state x="451" y="453" key="Vcs.Push.Dialog.v2" timestamp="1620337624038">
       <screen x="63" y="0" width="2497" height="1440" />
     </state>
-    <state x="451" y="453" key="Vcs.Push.Dialog.v2/63.0.2497.1440@63.0.2497.1440" timestamp="1620324262480" />
+    <state x="451" y="453" key="Vcs.Push.Dialog.v2/63.0.2497.1440@63.0.2497.1440" timestamp="1620337624038" />
+    <state x="163" y="100" width="1392" height="1240" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1620414520525">
+      <screen x="63" y="0" width="2497" height="1440" />
+    </state>
+    <state x="163" y="100" width="1392" height="1240" key="com.intellij.history.integration.ui.views.FileHistoryDialog/63.0.2497.1440@63.0.2497.1440" timestamp="1620414520525" />
+    <state x="566" y="453" width="661" height="534" key="find.popup" timestamp="1620412375054">
+      <screen x="63" y="0" width="2497" height="1440" />
+    </state>
+    <state x="566" y="453" width="661" height="534" key="find.popup/63.0.2497.1440@63.0.2497.1440" timestamp="1620412375054" />
     <state x="700" y="450" key="ftp.server.browser" timestamp="1620325218228">
       <screen x="63" y="0" width="2497" height="1440" />
     </state>
     <state x="700" y="450" key="ftp.server.browser/63.0.2497.1440@63.0.2497.1440" timestamp="1620325218228" />
+    <state x="522" y="329" width="672" height="678" key="search.everywhere.popup" timestamp="1620337604528">
+      <screen x="63" y="0" width="2497" height="1440" />
+    </state>
+    <state x="522" y="329" width="672" height="678" key="search.everywhere.popup/63.0.2497.1440@63.0.2497.1440" timestamp="1620337604528" />
     <state x="658" y="458" key="webDeployment.PermissionsDialog.Tabs" timestamp="1620325195694">
       <screen x="63" y="0" width="2497" height="1440" />
     </state>

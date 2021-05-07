@@ -3,8 +3,6 @@
 
 namespace App\Repository;
 
-
-use App\Service\ApiResponseDecorator;
 use Symfony\Contracts\HttpClient\Exception\ClientExceptionInterface;
 use Symfony\Contracts\HttpClient\Exception\DecodingExceptionInterface;
 use Symfony\Contracts\HttpClient\Exception\RedirectionExceptionInterface;
@@ -23,7 +21,6 @@ class ApiRepository
     public function __construct(HttpClientInterface $client)
     {
         $this->client = $client;
-
     }
 
     /**
@@ -46,7 +43,7 @@ class ApiRepository
             if (isset($res['hydra:totalItems'])) {
                 $this->metaInfo['totalItems'] = $res['hydra:totalItems'];
             }
-            return $res;
+            return $res['hydra:member'];
 
         } catch (TransportExceptionInterface $exception) {
         } catch (\Exception $exception) {

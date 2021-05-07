@@ -4,8 +4,6 @@
 namespace App\Repository;
 
 
-use App\Service\ApiResponseDecorator;
-use App\Service\PagePrototypeTranslator;
 use Symfony\Contracts\HttpClient\Exception\ClientExceptionInterface;
 use Symfony\Contracts\HttpClient\Exception\DecodingExceptionInterface;
 use Symfony\Contracts\HttpClient\Exception\RedirectionExceptionInterface;
@@ -31,36 +29,30 @@ class AsyncApiRepository
     /** @var array */
     private $resultVars;
 
-    private $pageTranslationService;
-
-    public function __construct(HttpClientInterface $client, PagePrototypeTranslator $pageTranslationService)
+    public function __construct(HttpClientInterface $client)
     {
         $this->client = $client;
-        $this->pageTranslationService = $pageTranslationService;
     }
 
 
     /**
      * @param array $var
-     * @param null  $requestNum
+     * @param null $requestNum
      *
      * @return $this
      */
-    public function setResultVar(&$var, $requestNum = null)
+    public function setResultVar($var, $requestNum = null)
     {
-        if (!isset($var)) {
-            $var = [];
-        }
         if (empty($requestNum)) {
             $requestNum = sizeof($this->requests);
         }
         $requestNum--;
-        $this->resultVars[$requestNum] = &$var;
+        $this->resultVars[$requestNum] = $var;
         return $this;
     }
 
     /**
-     * @return bool
+     * @return array
      * @throws ClientExceptionInterface
      * @throws DecodingExceptionInterface
      * @throws RedirectionExceptionInterface
@@ -69,30 +61,29 @@ class AsyncApiRepository
      */
     public function execute()
     {
+        $result = [];
         foreach ($this->client->stream($this->requests) as $response => $chunk) {
             if (!$chunk->isFirst() && !$chunk->isLast()) {
                 foreach ($this->requests as $num => $request) {
                     if ($request == $response && isset($this->resultVars[$num])) {
                         $res = $response->toArray();
-                        $this->resultVars[$num] = ApiResponseDecorator::decorate((isset($res['hydra:member'])) ? $res['hydra:member'] : $res,
-                            $this->pageTranslationService);
+                        $result[$this->resultVars[$num]] = isset($res['hydra:member']) ? $res['hydra:member'] : $res;
                     }
                 }
             }
         }
-        return true;
+        return $result;
     }
 
     /**
      * @param string $url
-     * @param array  $params
+     * @param array $params
      *
      * @return $this
      */
     public function apiCall(string $url, array $params = [])
     {
         $url = $this->apiPrefix . $url;;
-        $params['locale'] = $this->locale;
         foreach ($params as $param => $value) {
             $url = str_replace("%{$param}%", $value, $url);
         }
